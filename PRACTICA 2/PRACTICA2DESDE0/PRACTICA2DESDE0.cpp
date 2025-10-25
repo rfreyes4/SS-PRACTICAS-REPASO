@@ -1,25 +1,39 @@
 // PRACTICA2DESDE0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
-#include <iostream>
+#include "cabecera.h"
+#include "Crono.h"
+#include <mmsystem.h>   // 📦 Cabecera donde se define MMTIME
+#pragma comment(lib, "winmm.lib") // Necesario para las funciones multimedia
 
 int main()
 {
 	setlocale(LC_ALL, "Spanish");
 
-	struct {
+	/* struct {
 		int entero;
 		char car;
 	} vEstructura = { 256, 1 }; // Define + inicializa la estructura
 	union {
 		int entero;
 		char car;
+		unsigned char matriz[4];
+
 	}  vUnion = { 256 }; // Define + inicializa la unión
 
-	vUnion.car = 1;
-	printf("Estructura: %d Tam: %d\n", vEstructura.entero, sizeof(vEstructura));
-	printf("Union: %d Tam: %d\n", vUnion.entero, sizeof(vUnion));
+	vUnion.entero = 0x89abcdef; // byte 0: 0xef, byte 1: 0xcd, byte 2: 0xab, byte 3: 0x89
+	printf("vUnion.entero vale 0x%x\n", vUnion.entero);
+	printf("El valor del byte 2 de vUnion.entero es: 0x%x\n", 
+		vUnion.matriz[2]);  // sustituir ??? por la xpresión que calcula el byte 2 de vUnion.entero 
+		*/
 
+	CronoInicio();
+	Sleep(1200);
+	double segs = CronoLee();
+
+	MMTIME tiempo;
+
+	printf("Han pasado %f segundos.\n", segs);
 	printf("\nPor favor, pulse la tecla ENTRAR para terminar...\n");
 	(void)getchar();
 	return 0;

@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Crono.cpp" />
     <ClCompile Include="PRACTICA2DESDE0.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cabecera.h" />
+    <ClInclude Include="Crono.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
