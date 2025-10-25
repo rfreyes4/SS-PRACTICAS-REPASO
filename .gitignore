@@ -1,0 +1,78 @@
+# ==========================
+# Visual Studio / C++
+# ==========================
+
+# Archivos temporales y de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos intermedios y de build
+*.obj
+*.pdb
+*.pch
+*.idb
+*.ilk
+*.tmp
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.cachefile
+*.lastbuildstate
+*.db
+*.ipch
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# Archivos binarios
+*.exe
+*.dll
+*.lib
+*.app
+*.out
+
+# Archivos generados por Visual Studio
+*.manifest
+*.res
+*.ncb
+*.sdf
+*.opensdf
+*.sbr
+*.unsuccessfulbuild
+
+# Carpetas generadas automáticamente
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+x64/
+x86/
+ARM/
+ARM64/
+Debug/
+Release/
+.vs/
+.ipch/
+_ReSharper*/
+_TestResults*/
+[Aa]ppPackages/
+publish/
+
+# Config local del editor
+.vscode/
+.vsconfig
+
+# SO
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Backups / temporales
+*.bak
+*.swp
+*.swo
+*.~*
+
